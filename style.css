@@ -1179,8 +1179,42 @@ ul {
     
     /* Component specific tweaks */
     .experience-badge { bottom: 10px; left: 10px; }
-    .founder-container { grid-template-columns: 1fr; gap: 30px; }
-    .founder-image .image-frame { max-width: 300px; }
+    /* Founder Section - Mobile Optimized */
+    .founder-container {
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+        text-align: center;
+    }
+    .founder-image {
+        display: flex;
+        justify-content: center;
+        order: -1; /* Ensure image comes first */
+    }
+    .founder-image .image-frame {
+        max-width: 260px;
+        width: 100%;
+        aspect-ratio: 3/4;
+    }
+    .founder-text {
+        padding: 0 10px;
+    }
+    .founder-text .section-title {
+        font-size: 1.8rem;
+    }
+    .founder-name {
+        font-size: 1.6rem;
+        margin-bottom: 16px;
+    }
+    .founder-bio {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 24px;
+    }
+    .signature-placeholder {
+        height: 45px;
+        margin: 0 auto;
+    }
+
     .portfolio-grid { grid-template-columns: 1fr; }
     .portfolio-filters { flex-wrap: wrap; justify-content: center; }
     
