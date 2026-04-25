@@ -1179,6 +1179,7 @@ ul {
     
     /* Component specific tweaks */
     .experience-badge { bottom: 10px; left: 10px; }
+    .founder-container { grid-template-columns: 1fr; gap: 30px; }
     .founder-image .image-frame { max-width: 300px; }
     .portfolio-grid { grid-template-columns: 1fr; }
     .portfolio-filters { flex-wrap: wrap; justify-content: center; }
